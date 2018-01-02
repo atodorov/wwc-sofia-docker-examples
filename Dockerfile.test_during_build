@@ -1,7 +1,7 @@
 FROM wwc/hello
 
-ADD tests.sh /tmp
+ADD test_during_build.sh /tmp
 
-RUN chmod a+x /tmp/tests.sh
+RUN chmod a+x /tmp/test_during_build.sh
 
-RUN /tmp/tests.sh
+RUN /tmp/test_during_build.sh
