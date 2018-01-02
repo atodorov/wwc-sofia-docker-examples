@@ -1,0 +1,7 @@
+FROM wwc/hello
+
+ADD tests.sh /tmp
+
+RUN chmod a+x /tmp/tests.sh
+
+RUN /tmp/tests.sh
