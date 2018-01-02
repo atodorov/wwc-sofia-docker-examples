@@ -1,0 +1,7 @@
+FROM centos
+
+COPY test_during_execution.sh /tmp
+
+RUN chmod a+x /tmp/test_during_execution.sh
+
+ENTRYPOINT ["/tmp/test_during_execution.sh"]

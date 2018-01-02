@@ -1,4 +1,4 @@
-FROM wwc/hello
+FROM wwc/hello-world
 
 ADD test_during_build.sh /tmp
 
